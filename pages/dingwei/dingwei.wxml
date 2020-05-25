@@ -1,0 +1,3 @@
+<!--pages/dingwei/dingwei.wxml-->
+<view>经度：{{lon}}</view>
+<view>纬度：{{lat}}</view>

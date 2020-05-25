@@ -1,3 +1,20 @@
 <!--pages/home/home.wxml-->
 <text class="title">pages/home/home.wxml</text>
 <button size="mini">按钮</button>
+
+<my-cpn></my-cpn>
+<my-cpn/>
+
+<!-- 自定义组件传递参数/样式 -->
+<my-prop title="哈哈哈" titleclass="red"/>
+<my-prop title="哈哈哈" titleclass="green"/>
+<my-prop title="哈哈哈" titleclass="blue"/>
+<my-prop/>
+
+<!-- 组件内部发出事件 -->
+<view>当前计数：{{counter}}</view>
+<my-event bind:increment="handleIncrement"/>
+
+<!-- tab-control练习 -->
+<w-tab-control titles="{{['衣服','裤子','鞋子']}}"
+           bind:titleclick="handleTabClick"/>

@@ -1,0 +1,2 @@
+<!--components/my-sel/my-sel.wxml-->
+<view bindtap="incrementCounter">组件内的计数：{{counter}}</view>
